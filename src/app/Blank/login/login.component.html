@@ -1,0 +1,12 @@
+<p>login works!</p>
+<form (ngSubmit)="login()">
+  username: <input type="text" [(ngModel)]="user.username" name="username" required><br>
+  password: <input type="password" [(ngModel)]="user.password" name="password" required><br>
+  
+  Role: <select [(ngModel)]="user.userRole" name="role" required>
+    <option value="">Select Role</option>
+    <option *ngFor="let r of roles" [value]="r">{{r}}</option>
+  </select>
+
+  <button type="submit">Login</button>
+</form>

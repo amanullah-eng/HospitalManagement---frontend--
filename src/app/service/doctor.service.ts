@@ -24,7 +24,7 @@ export class DoctorService {
   }
 
   add(doctor: Doctor): Observable<Doctor> {
-    return this.http.post<Doctor>(this.baseUrl, doctor, httpOptions);
+    return this.http.post<Doctor>(this.baseUrl +"/save", doctor, httpOptions);
   }
 
 

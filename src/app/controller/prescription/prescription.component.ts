@@ -130,11 +130,14 @@ unitOptions: string[] = [
   // Appointment Info
   this.prs.appointmentId = this.appointment.id;
   this.prs.appointmentCode = this.appointment.appointmentCode;
-  this.prs.Date = this.appointment.date;
+  //this.prs.Date = this.appointment.date;
+  this.prs.Date = this.appointment.date ? new Date(this.appointment.date) : undefined;
   this.prs.department = this.appointment.department;
   this.prs.status = this.appointment.status;
   this.prs.madicleHistry = this.appointment.madicleHistry;
-  this.prs.bookingDate = this.appointment.bookingDate;
+  //this.prs.bookingDate = this.appointment.bookingDate;
+  this.prs.bookingDate = this.appointment.bookingDate ? new Date(this.appointment.bookingDate) : undefined;
+
   this.prs.paymentStatus = this.appointment.paymentStatus;
 
   // Save prescription

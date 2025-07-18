@@ -3,11 +3,11 @@
 export class Appointment{
     id :number|undefined;
     appointmentCode: number|undefined;
-    date :Date|undefined;
+    date :string|undefined;
     department :string|undefined;
     status :number|undefined;
     madicleHistry :string|undefined;
-    bookingDate :Date|undefined;
+    bookingDate :string|undefined;
     paymentStatus :string|undefined;
 
     patientCode :any;

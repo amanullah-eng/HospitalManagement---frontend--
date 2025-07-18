@@ -114,7 +114,7 @@ onDoctorSelection(event: any) {
   department: ['', Validators.required],
   status: [0, [Validators.required, Validators.maxLength(11)]],
   madicleHistry: ['', Validators.required],    
-  bookingDate: [new Date()],   
+  bookingDate: ['', Validators.required],   
   paymentStatus: ['', Validators.required]  
     });
   }

@@ -57,7 +57,7 @@ export class AppointmentPaymentComponent implements OnInit {
 private buildForm() {
   this.addForm = this.fb.group({
     id: [],
-    paymentCode: [0, Validators.required],
+    paymentCode: [Math.floor(1000 + Math.random() * 9000)],
     patientId: [0, Validators.required],
     paymentDate: ['', Validators.required],
     amount: [0, Validators.required],

@@ -67,7 +67,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let a of appointments">
+
+        <!-- cancel button click korle direct delete hobe -->
+        <!-- <tr *ngFor="let a of appointments">
           <td>{{ a.id }}</td>
           <td>{{ a.appointmentCode }}</td>
           <td>{{ a.patientName }}</td>
@@ -80,7 +82,26 @@
             <button class="approve-btn" *ngIf="a.status != 1" (click)="approve(a)">✅ Approve</button>
             <button class="cancel-btn" (click)="cancel(a)">❌ Cancel</button>
           </td>
-        </tr>
+        </tr> -->
+
+
+
+        <!-- cancel button click korle delete hobem na but status change hobe -->
+        <tr *ngFor="let a of appointments">
+         <td>{{ a.id }}</td>
+          <td>{{ a.appointmentCode }}</td>
+          <td>{{ a.patientName }}</td>
+          <td>{{ a.doctorName }}</td>
+          <td>{{ a.department }}</td>
+          <td>{{ a.date | date }}</td>
+          <td>{{ getStatusText(a.status!) }}</td>
+          <td>{{ a.bookingDate | date }}</td>
+          <td>
+    <button class="approve-btn" (click)="approve(a)" [disabled]="a.status === 1">✅ Approve</button>
+    <button class="cancel-btn" (click)="cancel(a)" [disabled]="a.status === 2">❌ Cancel</button>
+  </td>
+</tr>
+
       </tbody>
     </table>
   </div>

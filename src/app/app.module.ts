@@ -37,7 +37,6 @@ import { LaboratoryComponent } from './controller/laboratory/laboratory.componen
 import { ViewTestComponent } from './controller/view-test/view-test.component';
 import { TestPaymentComponent } from './controller/test-payment/test-payment.component';
 import { MedicinePaymentComponent } from './controller/medicine-payment/medicine-payment.component';
-import { PharmasistBilingComponent } from './controller/pharmasist-biling/pharmasist-biling.component';
 import { ReportComponent } from './Admin Dashboard/report/report.component';
 import { AdminDashboardComponent } from './Admin Dashboard/admin-dashboard/admin-dashboard.component';
 import { NgChartsModule } from 'ng2-charts';
@@ -80,7 +79,6 @@ import { UserProfileComponent } from './Blank/user-profile/user-profile.componen
     ViewTestComponent,
     TestPaymentComponent,
     MedicinePaymentComponent,
-    PharmasistBilingComponent,
     ReportComponent,
     AdminDashboardComponent,
     UserProfileComponent

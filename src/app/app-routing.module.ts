@@ -30,7 +30,6 @@ import { ViewTestComponent } from "./controller/view-test/view-test.component";
 import { TestPaymentComponent } from "./controller/test-payment/test-payment.component";
 import { MedicinePaymentComponent } from "./controller/medicine-payment/medicine-payment.component";
 import { DoctorComponent } from "./Admin Dashboard/doctor/doctor.component";
-import { PharmasistBilingComponent } from "./controller/pharmasist-biling/pharmasist-biling.component";
 import { ReportComponent } from "./Admin Dashboard/report/report.component";
 import { UserProfileComponent } from "./Blank/user-profile/user-profile.component";
 
@@ -56,7 +55,7 @@ const appRoutes: Routes = [
         {path : "viewTest", component : ViewTestComponent},
         {path : "testPayment", component : TestPaymentComponent},
         {path : "medPayment", component : MedicinePaymentComponent},
-        {path : "pharma/:id", component : PharmasistBilingComponent}
+        
 
 
     ]

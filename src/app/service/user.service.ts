@@ -37,7 +37,6 @@ export class UserService {
     return this.http.get<User[]>(this.baseUrl);
   }
 
-
   getUserById(id: number) {
   return this.http.get<User>(`${this.baseUrl}/register/${id}`);
 }
